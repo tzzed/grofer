@@ -17,6 +17,7 @@ limitations under the License.
 package utils
 
 import (
+	"fmt"
 	"math"
 	"time"
 )
@@ -34,6 +35,7 @@ func roundOffNearestTen(num float64, divisor float64) float64 {
 }
 
 func RoundValues(num1, num2 float64) ([]float64, string) {
+	fmt.Printf("num1 %v && num2 %v\n", num1, num2)
 	nums := []float64{}
 	var units string
 	var n float64
